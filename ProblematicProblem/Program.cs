@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Reflection.Metadata.Ecma335;
 using System.Threading;
 
@@ -47,8 +48,8 @@ namespace ProblematicProblem
                 }
                 else if (genAnswer == "no")
                 {
-                    cont = false;
-                    break;
+                    Console.WriteLine("Have a good day!");
+                    Process.GetCurrentProcess().Kill();
                 }
                 else
                 {
